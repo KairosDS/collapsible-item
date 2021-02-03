@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>collapsible-item demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script type="module" src="../collapsible-item.js"></script>
+    <style>
+        .blocks {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            white-space: normal;
+        }
+
+        .code {
+            padding: 20px;
+            color: #FFF;
+            background: #000;
+        }
+
+        .attributes {
+            padding-left: 20px;
+        }
+
+        body {
+            --black-color: #000000;
+            --background-color-close: red;
+            --background-color-plus: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vertical-section-container centered fontColor">
+        <h3>Basic Collapsible-Item Demo</h3>
+        <div class="blocks">
+            <pre class="block code">
+          <code>
+            &lt;collapsible-item&gt;&lt;collapsible-item&gt;
+          </code>
+        </pre>
+            <pre class="block attributes">
+          <h3>Attributes</h3>
+          <ul>
+            <li>property1 (String)</li>
+            <li>property2 (Number)</li>
+          </ul>
+        </pre>
+        </div>
+
+        <h1>Collapsible-item</h1>
+        <collapsible-item
+            item="{&quot;title&quot;:&quot;España&quot;, &quot;description&quot;:[[{&quot;href&quot;: &quot;https://goo.gl/maps/p19G1ZwRENkP1PYW6&quot;, &quot;street&quot;: &quot;Castellana 81 Planta 7&quot;, &quot;cpCity&quot;: &quot;28046 Madrid&quot;}, { &quot;href&quot;: &quot;https://goo.gl/maps/RS56pEQ7rWwCrHJm6&quot;, &quot;street&quot;: &quot;Caleruega 102&quot;, &quot;cpCity&quot;: &quot;28033 Madrid&quot;}]]}"
+            open=true >
+        </collapsible-item>
+    </div>
+</body>
+
+</html>
